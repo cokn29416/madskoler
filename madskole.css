@@ -1,4 +1,4 @@
-@media(max-width:1330px){
+@media(max-width:1370px){
   nav{
     display: none;
   }
@@ -14,6 +14,14 @@
   margin-right: auto;
   }
 }
+
+@media(max-width:1150px){
+  .footer-col{
+    display: none;
+  }
+
+}
+
 
 * {
   box-sizing: border-box;
@@ -351,6 +359,18 @@ footer{
 }
 
 .footer-col li, a{
+  font-family: "Arial", sans-serif;
+  font-weight: 500px;
+  font-size: 15px;
+  color: black;
+}
+
+.footer-col1{
+  width: 25%;
+  padding: 0 30px;
+}
+
+.footer-col1 li, a{
   font-family: "Arial", sans-serif;
   font-weight: 500px;
   font-size: 15px;
