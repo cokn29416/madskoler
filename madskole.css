@@ -1,3 +1,15 @@
+@media(max-width:1450px){
+  li, a{
+    display: none;
+  }
+  .button{
+    display: none;
+  }
+  .header-line{
+    margin-top: 14px;
+  }
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,7 +34,7 @@ header{
   margin-left: 20px;
   margin-top: 15px;
   width: 220px;
-  }
+}
 
 /*Instruktør login*/
 .button {
@@ -63,7 +75,7 @@ li, a {
   display: inline-block;
   padding: 0px 20px;
   margin-bottom: 10px;
-  margin-top: 57px;
+  padding-top:57px;
 }
 
 /*Green Line*/
@@ -74,16 +86,17 @@ li, a {
   width: auto;
 }
 
+
 /*Slideshow*/
 .slider{
-  width: 2000px;
-  height: 800px;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
 }
 
 .slides{
   width: 500%;
-  height: 800px;
+  height: 100%;
   display: flex;
 }
 
@@ -97,14 +110,14 @@ li, a {
 }
 
 .slide img{
-  width: 2000px;
-  height: 800px;
+  width: 100%;
+  height: 100%;
 }
 
 /*Manual slide navigation*/
 .navigation-manual{
   position: absolute;
-  width: 2000px;
+  width: 100%;
   margin-top: -40px;
   display: flex;
   justify-content: center;
@@ -142,38 +155,83 @@ li, a {
   margin-left: -60%;
 }
 
-/*Automatic navigation*/
-.navigation-auto{
-  position: absolute;
+
+/*Madskole search*/
+.madskole-search{
+  width: 100%;
+  height: 280px;
+  background-color: #f1f1f1;
+}
+
+h2{
+  font-family: "Arial", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 60px;
+}
+
+p{
+  font-family: "Arial", sans-serif;
+  font-size: 17px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+/*Searchbar*/
+.wrap{
+  width: 30%;
+  margin: auto;
+  padding-top: 30px;
+}
+
+.search {
+  width: 100%;
+  position: relative;
   display: flex;
-  width: 2000px;
-  justify-content: center;
-  margin-top: 760px;
+  padding-bottom: 77px;
 }
 
-.navigation-auto div{
-  border: 2px solid white;
+.searchTerm {
+  width: 100%;
+  border: 3px solid white;
   padding: 5px;
-  border-radius: 10px;
-  transition: 1s;
+  height: 40px;
+  outline: none;
+  color: #9DBFAF;
 }
 
-.navigation-auto div:not(:last-child){
-  margin-right: 40px;
+.searchTerm:focus{
+  color: black;
 }
 
-#radio1:checked ~ .navigation-auto .auto-btn1{
-  background: white;
+.searchButton {
+  width: 60px;
+  height: 40px;
+  border: 1px solid #00B4CC;
+  background: #129a55;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 15px;
 }
 
-#radio2:checked ~ .navigation-auto .auto-btn2{
-  background: white;
+/*Spomsorer*/
+.sponsorer{
+  background-color: white;
+  width: 100%;
+  height: 200px;
 }
 
-#radio3:checked ~ .navigation-auto .auto-btn3{
-  background: white;
+.sponsor-img{
+  width: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-#radio4:checked ~ .navigation-auto .auto-btn4{
-  background: white;
+/*Information boxes*/
+.infobox{
+  background-color: pink ;
+  width: 100%;
+  height: 600px;
 }
